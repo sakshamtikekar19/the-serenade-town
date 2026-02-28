@@ -1,0 +1,4 @@
+cd "c:\Users\Ananya\OneDrive\Desktop\serenade"
+git add .github/workflows/ci.yml
+git commit -m "Add GitHub Actions CI workflow"
+git push origin HEAD:main
