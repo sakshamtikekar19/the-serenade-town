@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Serenade Town
+
+Single-page site for The Serenade Town (Andheri / Ghatkopar). Built with Next.js and Tailwind.
+
+**After cloning:** run `npm install`, then `npm run dev`. Do not commit `node_modules` (it’s in `.gitignore`).
 
 ## Getting Started
 
