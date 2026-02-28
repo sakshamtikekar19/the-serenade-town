@@ -9,6 +9,7 @@ import AddOns from '@/components/AddOns';
 import Calculator from '@/components/Calculator';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import AboutPrivateTheater from '@/components/AboutPrivateTheater';
 
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden w-full max-w-[100vw]">
       <Header selectedBranch={selectedBranch} onBranchChange={setSelectedBranch} />
+      <FloatingWhatsApp />
       <Hero />
       <OccasionsGrid />
       <WhyChooseUs />
