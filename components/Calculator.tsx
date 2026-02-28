@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { Cake, CloudFog, Users, Check, ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
 import Link from 'next/link';
@@ -21,15 +21,14 @@ export default function Calculator({ selectedBranch }: CalculatorProps) {
   const [hasCake, setHasCake] = useState(false);
   const [hasFog, setHasFog] = useState(false);
   const [extraGuests, setExtraGuests] = useState(0);
-  const [total, setTotal] = useState(0);
 
-  useEffect(() => {
+  const total = useMemo(() => {
     let price = selectedPackage.price;
     if (isWeekend) price += 200;
     if (hasCake) price += 350;
     if (hasFog) price += 700;
     price += extraGuests * 350;
-    setTotal(price);
+    return price;
   }, [selectedPackage, isWeekend, hasCake, hasFog, extraGuests]);
 
   const generateWhatsAppLink = () => {
