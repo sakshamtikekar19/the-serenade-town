@@ -34,7 +34,7 @@ export default function FeaturesList() {
     <section className="py-16 bg-white overflow-hidden">
       <div className="container mx-auto px-4 max-w-[100vw] box-border">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-brown-dark mb-10 md:mb-12 px-2">
-          What's Included
+          What&apos;s Included
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((section) => (

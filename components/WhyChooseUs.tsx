@@ -6,7 +6,7 @@ import { Star, Shield, MonitorPlay, Sparkles } from 'lucide-react';
 const points = [
   {
     title: '4.9⭐ Rated Excellence',
-    description: "Trusted by hundreds of guests for creating 'Truly Memorable' celebrations.",
+    description: "Trusted by hundreds of guests for creating \u2018Truly Memorable\u2019 celebrations.",
     icon: Star,
   },
   {
@@ -15,7 +15,7 @@ const points = [
     icon: Shield,
   },
   {
-    title: "The 'Binge' Experience",
+    title: "The \u2018Binge\u2019 Experience",
     description: '4K Projector setup with 20+ OTT apps for the ultimate movie date.',
     icon: MonitorPlay,
   },
