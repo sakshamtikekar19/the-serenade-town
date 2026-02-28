@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { ChevronDown } from 'lucide-react';
 
-// Cozy cinema / private screening vibe – replace with your own image in public/hero.jpg
+// Cozy cinema vibe – replace with your own: put hero.jpg in public/ and use src="/hero.jpg"
 const HERO_IMAGE =
   'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80';
 
@@ -31,16 +30,15 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Hero image / video placeholder – fills space on mobile and desktop */}
+      {/* Hero image – fills space on mobile and desktop */}
       <div className="relative z-10 w-full md:max-w-[45%] md:min-h-[50vh] flex items-center justify-center px-4 md:px-8">
         <div className="relative w-full max-w-md mx-auto aspect-[4/3] md:aspect-video rounded-2xl overflow-hidden shadow-xl border border-gold/20 bg-brown/5">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={HERO_IMAGE}
             alt="Private theater experience at The Serenade Town"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 45vw"
-            priority
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/20 to-transparent pointer-events-none" />
         </div>
